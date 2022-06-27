@@ -1,7 +1,9 @@
 <template>
     <header>
-        <li><a href="/">Home</a></li>
-        <li><a href="/admin">Area riservata</a></li>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/admin">Area riservata</a></li>
+        </ul>
     </header>
 </template>
 
@@ -17,8 +19,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    h1{
-        color: #117AC9;
-        font-size: 70px;
+    ul{
+        list-style-type: none;
+        display: flex;
+        font-size: 15px;
+        li{
+            padding-right: 20px;
+        }
     }
 </style>

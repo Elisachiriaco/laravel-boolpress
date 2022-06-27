@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <h2>Footer</h2>
+        <h6>Made by Elisa &hearts;</h6>
     </footer>
 </template>
 
@@ -11,8 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    h1{
-        color: #117AC9;
-        font-size: 70px;
+    footer{
+        padding-left: 50px;
     }
 </style>

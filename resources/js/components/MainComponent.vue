@@ -1,6 +1,5 @@
 <template>
     <main>
-        <h1>Main</h1>
         <ul>
             <li v-for="(post, index) in posts" :key="index">
                 {{post.title}}
@@ -18,7 +17,7 @@ export default {
     name: 'MainComponent',
     data(){
         return {
-            posts = [],
+            posts:[],
         }
     },
     methods:{
@@ -45,5 +44,11 @@ export default {
     h1{
         color: #117AC9;
         font-size: 70px;
+    }
+    main{
+        padding-left: 10px;
+    }
+    ul{
+        list-style-type: none;
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="title">
+    <div>
         <header-component />
         <main-component />
         <footer-component />
@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HeaderComponent from '../components/HeaderComponent';
-import MainComponent from '../components/MainComponent';
-import FooterComponent from '../components/FooterComponent';
+import HeaderComponent from '../components/HeaderComponent.vue';
+import MainComponent from '../components/MainComponent.vue';
+import FooterComponent from '../components/FooterComponent.vue';
 
 export default {
     name: 'App',
@@ -22,12 +22,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.title{
-    height: calc(100% - 80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
+
 </style>
