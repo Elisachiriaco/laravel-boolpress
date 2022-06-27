@@ -1,12 +1,13 @@
 <template>
-    <section>
-        <h1>{{titolo}}</h1>
-    </section>
+    <header>
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin">Area riservata</a></li>
+    </header>
 </template>
 
 <script>
 export default {
-    name: 'AppMain',
+    name: 'HeaderComponent',
     data(){
         return {
             'titolo': 'Boolpress'

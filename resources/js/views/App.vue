@@ -1,15 +1,22 @@
 <template>
     <div class="title">
-        <app-main/>
+        <header-component />
+        <main-component />
+        <footer-component />
     </div>
 </template>
 
 <script>
-import AppMain from '../components/AppMain'
+import HeaderComponent from '../components/HeaderComponent';
+import MainComponent from '../components/MainComponent';
+import FooterComponent from '../components/FooterComponent';
+
 export default {
     name: 'App',
     components: {
-        AppMain
+        HeaderComponent,
+        MainComponent,
+        FooterComponent
     },
 }
 </script>
