@@ -1,9 +1,17 @@
 <template>
     <header>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/admin">Area riservata</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div v-for="(item, index) in menuItem" :key="index">
+                    <router-link :to="{ name: item.routeName} " class="navbar-brand">{{item.label}}</router-link>
+                </div>
+                <li class="reserved"><a href="/admin">Area riservata</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
     </header>
 </template>
 
@@ -12,7 +20,24 @@ export default {
     name: 'HeaderComponent',
     data(){
         return {
-            'titolo': 'Boolpress'
+        menuItem: [
+        {
+            label: 'Home',
+            routeName: 'home'
+        },
+        {
+            label: 'Posts',
+            routeName: 'posts'
+        },
+        {
+            label: 'Chi Siamo',
+            routeName: 'about'
+        },
+        {
+            label: 'Contatti',
+            routeName: 'contact',
+        }
+        ],
         }
     },
 }
@@ -26,5 +51,15 @@ export default {
         li{
             padding-right: 20px;
         }
+    }
+
+    .router-link-active{
+        border-bottom: 2px solid #117AC9;
+    }
+
+    .reserved{
+        position: fixed;
+        top: 15px;
+        right: 10px;
     }
 </style>
