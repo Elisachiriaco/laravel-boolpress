@@ -8,7 +8,7 @@
         <div class="card">
         <ul v-if="posts.length > 0">
             <li v-for="(post,index) in posts" :key="post.id">
-                {{index}} - {{post.title}}
+                {{index}} - {{post.title}} <br>
                 <router-link :to="{ name: 'single-post', params: { slug: post.slug } }" class="pt-2"> <div class="btn">Visualizza post</div> </router-link>
             </li>
         </ul>
@@ -41,6 +41,9 @@ export default {
     border-radius: 10px;
     ul{
     list-style-type: none;
+    }
+    li{
+        padding-top: 20px;
     }
 }
 .btn{

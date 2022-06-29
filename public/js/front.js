@@ -2061,6 +2061,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'HomeComponent'
 });
@@ -2142,10 +2161,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -2329,7 +2344,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".card[data-v-4898ab33] {\n  margin: 0 25%;\n  align-items: center;\n  width: 50%;\n  padding: 5rem;\n  border-radius: 10px;\n}\n.card ul[data-v-4898ab33] {\n  list-style-type: none;\n}\n.btn[data-v-4898ab33] {\n  width: 140px;\n  height: 30px;\n  line-height: 15px;\n  border: 1px solid #EAA480;\n}\n.btn[data-v-4898ab33]:hover {\n  background-color: #EAA480;\n}\nul[data-v-4898ab33] {\n  list-style-type: none;\n}", ""]);
+exports.push([module.i, ".card[data-v-4898ab33] {\n  margin: 0 25%;\n  align-items: center;\n  width: 50%;\n  padding: 5rem;\n  border-radius: 10px;\n}\n.card ul[data-v-4898ab33] {\n  list-style-type: none;\n}\n.card li[data-v-4898ab33] {\n  padding-top: 20px;\n}\n.btn[data-v-4898ab33] {\n  width: 140px;\n  height: 30px;\n  line-height: 15px;\n  border: 1px solid #EAA480;\n}\n.btn[data-v-4898ab33]:hover {\n  background-color: #EAA480;\n}\nul[data-v-4898ab33] {\n  list-style-type: none;\n}", ""]);
 
 // exports
 
@@ -3783,6 +3798,30 @@ var staticRenderFns = [
       _c("div", { staticClass: "jumbotron" }, [
         _c("div", { staticClass: "text" }, [_c("h2", [_vm._v("Home")])]),
       ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c("h3", { staticClass: "mb-4" }, [_vm._v("Most popular recipes")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row justify-content-center mb-4" }, [
+          _c("div", { staticClass: "col-5 mozzarella mr-3" }, [
+            _c("p", [_vm._v("Appetizer")]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-5 pizze" }, [
+            _c("p", [_vm._v("Pizze")]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row justify-content-center mt-4" }, [
+          _c("div", { staticClass: "col-5 risotto mr-3" }, [
+            _c("p", [_vm._v("Made in Italy")]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-5 waffle" }, [
+            _c("p", [_vm._v("Sweets")]),
+          ]),
+        ]),
+      ]),
     ])
   },
 ]
@@ -3857,8 +3896,10 @@ var render = function () {
                       _vm._s(index) +
                       " - " +
                       _vm._s(post.title) +
-                      "\n            "
+                      " "
                   ),
+                  _c("br"),
+                  _vm._v(" "),
                   _c(
                     "router-link",
                     {
@@ -3918,14 +3959,10 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", [
-    _c("div", { staticClass: "jumbotron" }, [
-      _c("div", { staticClass: "text" }, [
-        _c("h2", [_vm._v(_vm._s(_vm.post.title))]),
-      ]),
-    ]),
-    _vm._v(" "),
     _vm.post
       ? _c("div", { staticClass: "card" }, [
+          _c("h2", [_vm._v(_vm._s(_vm.post.title))]),
+          _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.post.content))]),
           _vm._v(" "),
           _vm.post.tags

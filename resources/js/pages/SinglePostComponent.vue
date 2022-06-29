@@ -1,11 +1,7 @@
 <template>
     <section>
-        <div class="jumbotron">
-            <div class="text">
-            <h2>{{post.title}}</h2>
-            </div>
-        </div>
         <div class="card" v-if="post">
+        <h2>{{post.title}}</h2>
         <p>{{post.content}}</p>
         <ul v-if="post.tags">
             <li v-for="tag in post.tags" :key="tag.id">{{tag.name}}</li>
