@@ -15,15 +15,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-    h1{
-        color: #117AC9;
-        font-size: 70px;
-    }
-    main{
-        padding-left: 10px;
-    }
-    ul{
-        list-style-type: none;
-    }
+<style lang="scss">
+section{
+    padding-top: 90px;
+}
 </style>

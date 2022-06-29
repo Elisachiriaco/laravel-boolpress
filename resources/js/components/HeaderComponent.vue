@@ -1,16 +1,13 @@
 <template>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <div v-for="(item, index) in menuItem" :key="index">
-                    <router-link :to="{ name: item.routeName} " class="navbar-brand">{{item.label}}</router-link>
+        <nav>
+            <h1>Boolpress</h1>
+            <ul>
+                <div v-for="(item, index) in menuItem" :key="index" class="pl-5">
+                    <router-link :to="{ name: item.routeName} " class="link">{{item.label}}</router-link>
                 </div>
-                <li class="reserved"><a href="/admin">Area riservata</a></li>
+                <li class="link pl-5"><a href="/admin">Area riservata</a></li>
             </ul>
-            </div>
-        </div>
         </nav>
     </header>
 </template>
@@ -43,23 +40,55 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+nav{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    height: 80px;
+    vertical-align: middle;
+    line-height: 40px;
     ul{
-        list-style-type: none;
-        display: flex;
-        font-size: 15px;
-        li{
-            padding-right: 20px;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    justify-content: flex-end;
+    list-style-type: none;
+    display: flex;
+    font-size: 15px;
+    text-transform: uppercase;
+    li{
+        justify-content: flex-end;
+        a{
+            color: black;
+            &:hover{
+                color: #EAA480;
+                text-decoration: none;
+                transition-duration: 1s;
+            }
         }
     }
+}
+}
 
-    .router-link-active{
-        border-bottom: 2px solid #117AC9;
-    }
+.router-link-exact-active{
+    color: #EAA480;
+}
 
-    .reserved{
-        position: fixed;
-        top: 15px;
-        right: 10px;
+.link{
+    color: black;
+    &:hover{
+        color: #EAA480;
+        text-decoration: none;
+        transition-duration: 1s;
     }
+}
+h1{
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    vertical-align: middle;
+    line-height: 40px;
+}
 </style>

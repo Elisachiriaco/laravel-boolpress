@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h1>Contact</h1>
+        <h2>Contact</h2>
     </section>
 </template>
 
@@ -11,7 +11,5 @@ export default {
 </script>
 
 <style lang="scss">
-    h1{
-        text-align: center;
-    }
+
 </style>
