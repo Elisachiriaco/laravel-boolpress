@@ -1,6 +1,10 @@
 <template>
     <section>
-        <h2>About</h2>
+        <div class="jumbotron">
+            <div class="text">
+            <h2>About</h2>
+            </div>
+        </div>
     </section>
 </template>
 

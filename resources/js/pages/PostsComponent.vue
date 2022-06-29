@@ -9,7 +9,7 @@
         <ul v-if="posts.length > 0">
             <li v-for="(post,index) in posts" :key="post.id">
                 {{index}} - {{post.title}}
-                <router-link :to="{ name: 'single-post', params: { slug: post.slug } }"> Visualizza Post </router-link>
+                <router-link :to="{ name: 'single-post', params: { slug: post.slug } }" class="pt-2"> <div class="btn">Visualizza post</div> </router-link>
             </li>
         </ul>
         </div>
@@ -43,13 +43,16 @@ export default {
     list-style-type: none;
     }
 }
-.jumbotron{
-    width: 100%;
-    .text{
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        text-transform: translate(-50%,-50%);
+.btn{
+    width: 140px;
+    height: 30px;
+    line-height: 15px;
+    border: 1px solid #EAA480;
+    &:hover{
+        background-color: #EAA480;
     }
+}
+ul{
+    list-style-type: none;
 }
 </style>

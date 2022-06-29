@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Faster+One&display=swap);@charset "UTF-8";
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -17632,8 +17632,22 @@ readers do not read off random characters that represent icons */
 }
 
 .jumbotron {
-  background-image: url("../img/strawberry.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url("../img/strawberry.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px;
+  position: relative;
+}
+.jumbotron .text {
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  z-index: 100;
+  text-transform: translate(-50%, -50%);
+}
+.jumbotron h2 {
+  font-size: 50px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: "Faster One", cursive;
 }

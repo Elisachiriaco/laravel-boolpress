@@ -1,6 +1,10 @@
 <template>
     <section>
-        <h2>Contact</h2>
+        <div class="jumbotron">
+            <div class="text">
+            <h2>Contact</h2>
+            </div>
+        </div>
     </section>
 </template>
 

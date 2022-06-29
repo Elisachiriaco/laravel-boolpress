@@ -73,6 +73,7 @@ nav{
 }
 
 .router-link-exact-active{
+    border-bottom:1px solid #EAA480;
     color: #EAA480;
 }
 

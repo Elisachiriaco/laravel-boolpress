@@ -2007,6 +2007,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'AboutComponent'
 });
@@ -2028,6 +2032,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'ContactComponent'
 });
@@ -2043,6 +2051,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -2130,6 +2142,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -2275,7 +2291,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "nav {\n  background-color: white;\n  position: fixed;\n  width: 100%;\n  z-index: 200;\n  height: 80px;\n  vertical-align: middle;\n  line-height: 40px;\n}\nnav ul {\n  position: fixed;\n  top: 20px;\n  right: 10px;\n  justify-content: flex-end;\n  list-style-type: none;\n  display: flex;\n  font-size: 15px;\n  text-transform: uppercase;\n}\nnav ul li {\n  justify-content: flex-end;\n}\nnav ul li a {\n  color: black;\n}\nnav ul li a:hover {\n  color: #EAA480;\n  text-decoration: none;\n  transition-duration: 1s;\n}\n.router-link-exact-active {\n  color: #EAA480;\n}\n.link {\n  color: black;\n}\n.link:hover {\n  color: #EAA480;\n  text-decoration: none;\n  transition-duration: 1s;\n}\nh1 {\n  position: fixed;\n  top: 20px;\n  left: 10px;\n  vertical-align: middle;\n  line-height: 40px;\n}", ""]);
+exports.push([module.i, "nav {\n  background-color: white;\n  position: fixed;\n  width: 100%;\n  z-index: 200;\n  height: 80px;\n  vertical-align: middle;\n  line-height: 40px;\n}\nnav ul {\n  position: fixed;\n  top: 20px;\n  right: 10px;\n  justify-content: flex-end;\n  list-style-type: none;\n  display: flex;\n  font-size: 15px;\n  text-transform: uppercase;\n}\nnav ul li {\n  justify-content: flex-end;\n}\nnav ul li a {\n  color: black;\n}\nnav ul li a:hover {\n  color: #EAA480;\n  text-decoration: none;\n  transition-duration: 1s;\n}\n.router-link-exact-active {\n  border-bottom: 1px solid #EAA480;\n  color: #EAA480;\n}\n.link {\n  color: black;\n}\n.link:hover {\n  color: #EAA480;\n  text-decoration: none;\n  transition-duration: 1s;\n}\nh1 {\n  position: fixed;\n  top: 20px;\n  left: 10px;\n  vertical-align: middle;\n  line-height: 40px;\n}", ""]);
 
 // exports
 
@@ -2313,7 +2329,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".card[data-v-4898ab33] {\n  margin: 0 25%;\n  align-items: center;\n  width: 50%;\n  padding: 5rem;\n  border-radius: 10px;\n}\n.card ul[data-v-4898ab33] {\n  list-style-type: none;\n}\n.jumbotron[data-v-4898ab33] {\n  width: 100%;\n}\n.jumbotron .text[data-v-4898ab33] {\n  position: absolute;\n  top: 50%;\n  right: 50%;\n  text-transform: translate(-50%, -50%);\n}", ""]);
+exports.push([module.i, ".card[data-v-4898ab33] {\n  margin: 0 25%;\n  align-items: center;\n  width: 50%;\n  padding: 5rem;\n  border-radius: 10px;\n}\n.card ul[data-v-4898ab33] {\n  list-style-type: none;\n}\n.btn[data-v-4898ab33] {\n  width: 140px;\n  height: 30px;\n  line-height: 15px;\n  border: 1px solid #EAA480;\n}\n.btn[data-v-4898ab33]:hover {\n  background-color: #EAA480;\n}\nul[data-v-4898ab33] {\n  list-style-type: none;\n}", ""]);
 
 // exports
 
@@ -3693,7 +3709,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [_c("h2", [_vm._v("About")])])
+    return _c("section", [
+      _c("div", { staticClass: "jumbotron" }, [
+        _c("div", { staticClass: "text" }, [_c("h2", [_vm._v("About")])]),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -3724,7 +3744,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [_c("h2", [_vm._v("Contact")])])
+    return _c("section", [
+      _c("div", { staticClass: "jumbotron" }, [
+        _c("div", { staticClass: "text" }, [_c("h2", [_vm._v("Contact")])]),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -3755,7 +3779,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [_c("h2", [_vm._v("Home")])])
+    return _c("section", [
+      _c("div", { staticClass: "jumbotron" }, [
+        _c("div", { staticClass: "text" }, [_c("h2", [_vm._v("Home")])]),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -3834,6 +3862,7 @@ var render = function () {
                   _c(
                     "router-link",
                     {
+                      staticClass: "pt-2",
                       attrs: {
                         to: {
                           name: "single-post",
@@ -3841,7 +3870,11 @@ var render = function () {
                         },
                       },
                     },
-                    [_vm._v(" Visualizza Post ")]
+                    [
+                      _c("div", { staticClass: "btn" }, [
+                        _vm._v("Visualizza post"),
+                      ]),
+                    ]
                   ),
                 ],
                 1
@@ -3885,10 +3918,14 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", [
+    _c("div", { staticClass: "jumbotron" }, [
+      _c("div", { staticClass: "text" }, [
+        _c("h2", [_vm._v(_vm._s(_vm.post.title))]),
+      ]),
+    ]),
+    _vm._v(" "),
     _vm.post
       ? _c("div", { staticClass: "card" }, [
-          _c("h2", [_vm._v(_vm._s(_vm.post.title))]),
-          _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.post.content))]),
           _vm._v(" "),
           _vm.post.tags
