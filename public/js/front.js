@@ -3963,7 +3963,7 @@ var render = function () {
       ? _c("div", { staticClass: "card" }, [
           _c("h2", [_vm._v(_vm._s(_vm.post.title))]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.post.content))]),
+          _c("div", [_vm._v(_vm._s(_vm.post.content))]),
           _vm._v(" "),
           _vm.post.tags
             ? _c(
@@ -4059,7 +4059,7 @@ var render = function () {
         ])
       : _vm._e(),
     _vm._v(" "),
-    _vm.post.comments.length > 0
+    _vm.post && _vm.post.comments.length > 0
       ? _c(
           "ul",
           { staticClass: "mt-3" },

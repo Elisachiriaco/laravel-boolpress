@@ -21,4 +21,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/posts', 'Api\PostController@index');
 Route::get('/posts/{slug}', 'Api\PostController@show');
 // Rotta per salvataggio commenti
-Route::post('/comments','Api/PostController@store');
+Route::post('/comments','Api\CommentController@store');

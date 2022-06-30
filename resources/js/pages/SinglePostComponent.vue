@@ -2,7 +2,7 @@
     <section>
         <div class="card" v-if="post">
         <h2>{{post.title}}</h2>
-        <p>{{post.content}}</p>
+        <div>{{post.content}}</div>
         <ul v-if="post.tags">
             <li v-for="tag in post.tags" :key="tag.id">{{tag.name}}</li>
         </ul>
@@ -27,7 +27,7 @@
           </form>
         </div>
         </div>
-        <ul class="mt-3" v-if="post.comments.length > 0">
+        <ul class="mt-3" v-if="post && post.comments.length > 0">
           <h4>Commenti:</h4>
           <li v-for="comment in post.comments" :key="comment.id">
             {{ comment.username }}: {{ comment.content }}
